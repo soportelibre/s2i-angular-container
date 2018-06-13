@@ -1,0 +1,9 @@
+#!/bin/sh -e
+#
+# Save mode_modules to speed up the following builds.
+#
+
+if [ -d node_modules ]; then
+    # all deps contents to tar stream
+    tar cf - node_modules
+fi
