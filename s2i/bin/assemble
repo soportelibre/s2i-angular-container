@@ -79,6 +79,7 @@ if [ "$NODE_ENV" != "production" ]; then
 
 	echo "---> Building your Node application from source"
 	npm install
+	./node_modules/@angular/cli/bin/ng build
 
 else
 
