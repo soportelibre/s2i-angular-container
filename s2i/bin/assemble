@@ -91,7 +91,8 @@ else
 
 fi
 
-
+# Delete artifacts from image
+rm -rf node_modules/ .npm-global/ .npm/ || true
 
 echo "---> Installing application to web container"
 mv dist dist.old
